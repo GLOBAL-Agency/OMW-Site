@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | OnMyWay Miami</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-section {
+            padding: 150px 10% 50px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background: #111;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #333;
+        }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 5px; color: var(--primary); }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            background: #222;
+            border: 1px solid #444;
+            color: white;
+            border-radius: 5px;
+        }
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">OnMyWay</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="inventory.html">Inventario</a></li>
+            <li><a href="contact.html" class="active">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-section">
+        <div class="contact-info">
+            <h1>Hablemos.</h1>
+            <p>¿Tenés dudas sobre requisitos o formas de pago desde Argentina? Escribinos.</p>
+            <br>
+            <p>📍 Brickell, Miami, FL</p>
+            <p>📧 reservas@onmywaymiami.com</p>
+            
+            <a href="https://wa.me/1234567890" class="whatsapp-btn">
+                Chateá con nosotros por WhatsApp
+            </a>
+        </div>
+
+        <div class="contact-form">
+            <form action="#">
+                <div class="form-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" placeholder="Tu nombre...">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="correo@ejemplo.com">
+                </div>
+                <div class="form-group">
+                    <label>Mensaje</label>
+                    <textarea rows="5" placeholder="¿En qué auto estás interesado?"></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Enviar Consulta</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
