@@ -62,7 +62,7 @@ body {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1350&q=80');
+                url(https://images.pexels.com/photos/7540414/pexels-photo-7540414.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
