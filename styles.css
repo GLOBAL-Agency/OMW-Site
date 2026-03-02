@@ -62,7 +62,7 @@ body {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url(https://images.pexels.com/photos/7540414/pexels-photo-7540414.jpeg);
+                url(https://www.pexels.com/photo/red-ford-mustang-544542/);
     background-size: cover;
     background-position: center;
     display: flex;
