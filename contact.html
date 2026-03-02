@@ -5,14 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | OnMyWay Miami</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
         .contact-section {
             padding: 150px 10% 50px;
             display: flex;
             flex-wrap: wrap;
             gap: 50px;
+            font-family: 'Inter', sans-serif; /* Cleaner font for the body */
         }
+        
+        .contact-info h1 {
+            font-family: 'Montserrat', sans-serif; /* Keeping brand consistency */
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            color: #d1d5db;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Improved WhatsApp Button Styling */
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 28px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 25px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+            transition: background-color 0.2s ease-in-out, transform 0.2s ease;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+        }
+
+        /* Improved Form Styling */
         .contact-form {
             flex: 1;
             min-width: 300px;
@@ -20,31 +64,43 @@
             padding: 40px;
             border-radius: 15px;
             border: 1px solid #333;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
         }
+
         .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; margin-bottom: 5px; color: var(--primary); }
+        
+        .form-group label { 
+            display: block; 
+            margin-bottom: 8px; 
+            color: var(--primary); 
+            font-weight: 500;
+        }
+        
         .form-group input, .form-group textarea {
             width: 100%;
-            padding: 12px;
+            padding: 14px;
             background: #222;
             border: 1px solid #444;
             color: white;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
         }
-        .contact-info {
-            flex: 1;
-            min-width: 300px;
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary); /* Highlights cyan when typing */
         }
-        .whatsapp-btn {
-            display: inline-flex;
-            align-items: center;
-            background-color: #25D366;
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            margin-top: 20px;
+
+        .btn-submit {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
         }
     </style>
 </head>
@@ -57,10 +113,8 @@
             <h1>Hablemos.</h1>
             <p>¿Tenés dudas sobre requisitos o formas de pago desde Argentina? Escribinos.</p>
             <br>
-            <p>📍 Brickell, Miami, FL</p>
-            <p>📧 reservas@omwrentalcar.us</p>
             
-            <a href="https://wa.me/1234567890" class="whatsapp-btn">
+            <a href="https://wa.me/17863988843" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
                 Chateá con nosotros por WhatsApp
             </a>
         </div>
@@ -79,7 +133,7 @@
                     <label>Mensaje</label>
                     <textarea rows="5" placeholder="¿En qué auto estás interesado?"></textarea>
                 </div>
-                <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Enviar Consulta</button>
+                <button type="submit" class="btn-primary btn-submit">Enviar Consulta</button>
             </form>
         </div>
     </section>
