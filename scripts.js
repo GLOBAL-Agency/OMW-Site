@@ -10,7 +10,7 @@ class SiteHeader extends HTMLElement {
         this.innerHTML = `
             <nav class="navbar">
                 <a href="index.html" class="logo">
-                    <img src="Logo-OMW.jpeg" alt="OnMyWay Logo" style="max-height: 40px; width: auto; border-radius: 5px;">
+                    <img src="Logo-OMW.jpeg" alt="OnMyWay Logo" style="max-height: 80px; width: auto; border-radius: 5px;">
                 </a>
                 <ul class="nav-links">
                     <li><a href="index.html" class="${isIndex ? 'active' : ''}">Inicio</a></li>
