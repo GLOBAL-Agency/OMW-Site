@@ -45,7 +45,7 @@ class SiteFooter extends HTMLElement {
         this.innerHTML = `
             <footer class="site-footer">
                 <p>&copy; 2024 OnMyWay Miami. Todos los derechos reservados.</p>
-                <p>📍 Brickell, Miami, FL | 📧 reservas@omwrentalcar.us</p>
+                <p>📍 Miami, FL | WhatsApp +1 786-398-8843</p>
             </footer>
         `;
     }
